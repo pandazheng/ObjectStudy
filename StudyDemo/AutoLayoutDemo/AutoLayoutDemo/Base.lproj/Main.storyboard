@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwR-D1-iBw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBf-jd-gYr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.21299844439564297" green="1" blue="0.54926854026710725" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aBf-jd-gYr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="0T0-6S-gqs"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aBf-jd-gYr" secondAttribute="bottom" constant="50" id="Ujx-fy-YJV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZwR-D1-iBw" secondAttribute="trailing" constant="50" id="XRG-p0-11G">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-56"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZwR-D1-iBw" secondAttribute="bottom" constant="50" id="ZmY-VE-W5D">
+                                <variation key="heightClass=regular-widthClass=compact" constant="96"/>
+                            </constraint>
+                            <constraint firstItem="ZwR-D1-iBw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="bxW-4a-mIb">
+                                <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                            </constraint>
+                            <constraint firstItem="aBf-jd-gYr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="idr-1P-GTm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aBf-jd-gYr" secondAttribute="trailing" constant="50" id="yiZ-3m-p6o"/>
+                            <constraint firstItem="ZwR-D1-iBw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="zqx-yc-zwn">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-96"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZwR-D1-iBw"/>
+                                <exclude reference="aBf-jd-gYr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0T0-6S-gqs"/>
+                                <exclude reference="Ujx-fy-YJV"/>
+                                <exclude reference="idr-1P-GTm"/>
+                                <exclude reference="yiZ-3m-p6o"/>
+                                <exclude reference="ZmY-VE-W5D"/>
+                                <exclude reference="XRG-p0-11G"/>
+                                <exclude reference="bxW-4a-mIb"/>
+                                <exclude reference="zqx-yc-zwn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="aBf-jd-gYr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0T0-6S-gqs"/>
+                                <include reference="Ujx-fy-YJV"/>
+                                <include reference="idr-1P-GTm"/>
+                                <include reference="yiZ-3m-p6o"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZwR-D1-iBw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ZmY-VE-W5D"/>
+                                <include reference="XRG-p0-11G"/>
+                                <include reference="bxW-4a-mIb"/>
+                                <include reference="zqx-yc-zwn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420.75" y="225"/>
+        </scene>
+    </scenes>
+</document>
